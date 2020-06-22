@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="app.js"></script>
+    <title>VTodos</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <h1 class="title">VTodos</h1>
+                <p>A simple todo list application</p>
+                <form id="search-todos">
+                    <input id="search-content" type="text" placeholder="Tìm kiếm..." />
+                </form>
+            </div>
+        </header>
+        <div id="todo-list">
+            <h2 class="title">Các việc cần làm</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="complete">
+                    <span class="content">Rửa tay</span>
+                    <span class="delete">xóa</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="complete">
+                    <span class="content">Đeo khẩu trang</span>
+                    <span class="delete">xóa</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="complete">
+                    <span class="content">Không chạm vào mắt, mũi, miệng</span>
+                    <span class="delete">xóa</span>
+                </li>
+                <li>
+                    <input type="checkbox" id="complete">
+                    <span class="content">Xúc họng</span>
+                    <span class="delete">xóa</span>
+                </li>
+            </ul>
+        </div>
+        <form id="add-todo">
+            <input type="checkbox" id="hide" />
+            <label for="hide">Ẩn hoàn thành</label>
+            <input id="todo-content" type="text" placeholder="Thêm việc cần làm..." />
+            <button>Thêm</button>
+        </form>
+    </div>
+</body>
+
+</html>
